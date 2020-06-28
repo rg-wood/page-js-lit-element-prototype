@@ -1,0 +1,40 @@
+{
+  "name": "page-js-lit-element-prototype",
+  "version": "0.0.0",
+  "author": {
+    "name": "Ricardo Gladwell",
+    "email": "ricardo@gladwell.me"
+  },
+  "dependencies": {
+    "ink-elements": "^2.0.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "grunt": "^1.1.0",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-connect": "^2.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-npmcopy": "^0.2.0",
+    "htmllint-cli": "0.0.7",
+    "rollup": "^2.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "scribe-cli": "^1.0.0",
+    "stylelint": "^13.3.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "scripts": {
+    "lint": "eslint *.js && htmllint *.html && stylelint *.css assets/styles/**/*.css",
+    "build": "npm run --scripts-prepend-node-path=true lint && grunt && rollup -c",
+    "publish": "npm run --scripts-prepend-node-path=true build && scribe publish --size A4",
+    "clean": "grunt clean",
+    "start": "rollup -c && grunt run"
+  }
+}
