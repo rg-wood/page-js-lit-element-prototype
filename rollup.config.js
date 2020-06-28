@@ -1,9 +1,9 @@
 import resolve from 'rollup-plugin-node-resolve'
 
 module.exports = {
-  input: 'scripts/ink-elements.js',
+  input: 'scripts/components.js',
   output: {
-    file: 'dist/html/scripts/ink-elements.js',
+    file: 'dist/html/scripts/components.js',
     format: 'es'
   },
   plugins: [

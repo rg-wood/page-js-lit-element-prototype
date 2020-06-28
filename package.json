@@ -6,7 +6,8 @@
     "email": "ricardo@gladwell.me"
   },
   "dependencies": {
-    "ink-elements": "^2.0.1",
+    "html-import-wc": "git@github.com:grislyeye/html-import.git#readiness-signal",
+    "ink-elements": "git@github.com:ink-elements/ink-elements.git#fix-paginating-with-wc",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

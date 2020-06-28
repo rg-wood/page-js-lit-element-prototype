@@ -10,6 +10,10 @@ module.exports = function (grunt) {
             dest: 'dist/html/index.html'
           },
           {
+            src: 'lorum-ipsum.html',
+            dest: 'dist/html/lorum-ipsum.html'
+          },
+          {
             src: 'main.css',
             dest: 'dist/html/main.css'
           }
@@ -32,7 +36,7 @@ module.exports = function (grunt) {
         livereload: true
       },
       html: {
-        files: ['index.html', 'package.json', 'main.css'],
+        files: ['index.html', 'lorum-ipsum.html', 'package.json', 'main.css'],
         tasks: ['copy:main']
       },
       assets: {
