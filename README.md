@@ -1,6 +1,6 @@
-# Page Js Lit Element Prototype Document
+# Page.Js/lit-element Prototype Project
 
-Page Js Lit Element Prototype HTML document.
+Prototyping project to verify support for lit-element with Paged.js.
 
 Requirements:
 
